@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <title>Hogar Ecológico 🌱</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__text">
+      <h1>🏡 Hogar Ecológico</h1>
+      <p>Opta por energías limpias y sostenibles para reducir tu huella ambiental.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="eco__info">
+      <h2>Fuentes de energía renovable</h2>
+      <ul class="list">
+        <li class="list__item">
+          <img class="item__img" src="{{ url_for('static', filename='img/sol.png') }}" alt="Energía solar">
+          <span><strong>Energía solar:</strong> aprovecha la luz del sol para generar electricidad limpia.</span>
+        </li>
+
+        <li class="list__item">
+          <img class="item__img" src="{{ url_for('static', filename='img/viento.png') }}" alt="Energía eólica">
+          <span><strong>Energía eólica:</strong> usa el viento como fuente natural e inagotable.</span>
+        </li>
+
+        <li class="list__item">
+          <img class="item__img" src="{{ url_for('static', filename='img/hidro.png') }}" alt="Energía hidráulica">
+          <span><strong>Energía hidráulica:</strong> genera energía mediante el movimiento del agua.</span>
+        </li>
+      </ul>
+
+      <a href="/" class="btn">⬅️ Volver al inicio</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Calculadora Energética | Proyecto Hogar Ecológico</p>
+  </footer>
+</body>
+</html>
